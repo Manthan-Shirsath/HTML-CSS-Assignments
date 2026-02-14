@@ -5,37 +5,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal Align</title>
+    <title>Vertical Align</title>
     <style>
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            background-color: red;
-        }
-        .content {
-            height: 500px;
-        }
-        .vertical-center {
-            display: flex;
-            justify-content: center;
+        html, body {
             height: 100%;
-            flex-direction: column;
+            margin: 0;
         }
-        .horizontal-center {
-            margin: 0 auto;
+
+        .page-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="content">
-            <div class="vertical-center" style="background-color: yellow;">
-                <div class="horizontal-center">
-                    <h1>Hello World</h1>
-                </div>
-            </div>
-        </div>
+    <div class="page-center">
+        <h1>Hello World</h1>
     </div>
 </body>
 
